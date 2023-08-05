@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-6">
+        <label for="filterOption">Select :</label>
+        <select id="filterOption" class="form-control m-2">
+            <option value="model">Model</option>
+            <option value="company">Company</option>
+            <option value="price">Price</option>
+        </select>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-6">
+            <label for="filterValue">Search according to your selected Preference : </label>
+            <input type="text" id="filterValue" class="form-control m-2">
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-6">
+            <button id="searchBtn" class="btn btn-primary" onclick="filterMobiles()">Search</button>
+        </div>
+    </div>
+    <center class="mt-4">
+    <div id="showSpecification"></div>
+    <script src="app.js"></script>
+    </center>
+</body>
+</html>
